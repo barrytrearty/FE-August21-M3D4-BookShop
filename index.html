@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barry's Books</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      #headerDiv {
+        display: flex;
+        justify-content: space-between;
+        background: rgb(0, 0, 0);
+        color: white;
+        padding: 5px;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        opacity: 0.9;
+      }
+
+      .marginForCont {
+        padding-top: 80px;
+      }
+
+      #headerDiv h1 {
+        align-items: center;
+        font-weight: 100;
+      }
+
+      #headerDiv div {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        padding-right: 60px;
+        padding-top: 5px;
+      }
+
+      #headerDiv div i {
+        /* align-items: center; */
+        font-size: 25px;
+      }
+
+      #headerDiv div h6 {
+        /* text-align: center; */
+        font-size: 25px;
+        padding-left: 10px;
+        padding-top: 5px;
+        /* padding-right: 50px; */
+      }
+
+      img {
+        width: 100px;
+        height: 300px;
+        /* height: 100%; */
+        object-fit: cover;
+      }
+
+      h5 {
+        /* font-size: 1rem; */
+        width: 100%;
+        height: 50px;
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .under-the-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .buttons-sect {
+        display: flex;
+        /* flex-direction: column; */
+        align-content: flex-end;
+      }
+
+      .selected div {
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="headerDiv">
+      <div></div>
+      <h1>Barry's Big Bitchin' Book Bonanza</h1>
+      <div id="cart">
+        <i class="bi bi-cart-fill" onclick="emptyCart()"></i>
+        <h6 id="cart-number">0</h6>
+      </div>
+    </div>
+    <div class="container marginForCont">
+      <div
+        class="row row-cols-2 row-cols-md-3 row-cols-lg-4"
+        id="main-book-section"
+      ></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
