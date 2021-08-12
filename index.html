@@ -17,6 +17,10 @@
     />
     <!-- <link rel="stylesheet" href="style.css" /> -->
     <style>
+      /* #outerDiv {
+        position: fixed;
+      } */
+
       #headerDiv {
         display: flex;
         justify-content: space-between;
@@ -29,7 +33,11 @@
         opacity: 0.9;
       }
 
-      .marginForCont {
+      .paddingforInp {
+        margin-top: 50px;
+      }
+
+      .paddingForCont {
         padding-top: 80px;
       }
 
@@ -42,7 +50,7 @@
         display: flex;
         /* flex-direction: column; */
         justify-content: space-between;
-        padding-right: 60px;
+        padding-right: 10px;
         padding-top: 5px;
       }
 
@@ -93,15 +101,26 @@
     </style>
   </head>
   <body>
+    <!-- <div id="outerDiv"> -->
     <div id="headerDiv">
-      <div></div>
-      <h1>Barry's Big Bitchin' Book Bonanza</h1>
+      <div>
+        <input
+          type="text"
+          class="form-control paddingForInp"
+          placeholder="Search..."
+          onchange="filterBooks(this.value)"
+        />
+      </div>
+      <h1>Barry's Big Book Bonanza</h1>
       <div id="cart">
         <i class="bi bi-cart-fill" onclick="emptyCart()"></i>
         <h6 id="cart-number">0</h6>
       </div>
     </div>
-    <div class="container marginForCont">
+
+    <!-- </div> -->
+
+    <div class="container paddingForCont">
       <div
         class="row row-cols-2 row-cols-md-3 row-cols-lg-4"
         id="main-book-section"
